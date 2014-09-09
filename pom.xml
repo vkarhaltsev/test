@@ -24,6 +24,7 @@
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m3</version>
                 <configuration>
+                    <username>vkarhaltsev</username>
                     <flowInitContext>
                         <masterBranchName>master</masterBranchName>
                         <developBranchName>develop</developBranchName>
@@ -42,6 +43,7 @@
                     <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <noDeploy>true</noDeploy>
+                    <keepBranch>true</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
                 </configuration>
             </plugin>
