@@ -3,7 +3,7 @@
   <groupId>testhook</groupId>
   <artifactId>testhook</artifactId>
   <packaging>pom</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0-4th_branch-SNAPSHOT</version>
     <modules>
         <module>test-hook-distribution</module>
     </modules>
@@ -42,6 +42,7 @@
                     <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <noDeploy>true</noDeploy>
+                    <keepBranch>true</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
                 </configuration>
             </plugin>
