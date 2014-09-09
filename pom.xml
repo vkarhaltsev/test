@@ -24,14 +24,6 @@
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m4</version>
                 <configuration>
-                    <flowInitContext>
-                        <masterBranchName>master</masterBranchName>
-                        <developBranchName>develop</developBranchName>
-                        <featureBranchPrefix>feature-</featureBranchPrefix>
-                        <releaseBranchPrefix>release-</releaseBranchPrefix>
-                        <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
-                        <versionTagPrefix>tag-</versionTagPrefix>
-                    </flowInitContext>
                     <enableFeatureVersions>true</enableFeatureVersions>
                     <pushFeatures>true</pushFeatures>
                     <pushReleases>true</pushReleases>
@@ -43,6 +35,14 @@
                     <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <noDeploy>true</noDeploy>
+                    <flowInitContext>
+                        <masterBranchName>master</masterBranchName>
+                        <developBranchName>develop</developBranchName>
+                        <featureBranchPrefix>feature-</featureBranchPrefix>
+                        <releaseBranchPrefix>release-</releaseBranchPrefix>
+                        <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+                        <versionTagPrefix>tag-</versionTagPrefix>
+                    </flowInitContext>
                 </configuration>
             </plugin>
         </plugins>
