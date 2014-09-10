@@ -24,8 +24,6 @@
                 <artifactId>jgitflow-maven-plugin</artifactId>
                 <version>1.0-m4</version>
                 <configuration>
-                    <username>vkarhaltsev</username>
-		    <password>github.4spr1nk4</password>
                     <flowInitContext>
                         <masterBranchName>master</masterBranchName>
                         <developBranchName>develop</developBranchName>
