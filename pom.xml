@@ -41,6 +41,7 @@
                     <noHotfixBuild>true</noHotfixBuild>
                     <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
+	 	    <alwaysUpdateOrigin>true</alwaysUpdateOrigin>
                     <noDeploy>true</noDeploy>
                     <keepBranch>true</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
