@@ -46,6 +46,7 @@
                     <noDeploy>true</noDeploy>
                     <keepBranch>true</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
+	 	    <featureRebase>false</featureRebase>
                 </configuration>
             </plugin>
         </plugins>
