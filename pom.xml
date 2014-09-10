@@ -3,7 +3,7 @@
   <groupId>testhook</groupId>
   <artifactId>testhook</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.2-3z-SNAPSHOT</version>
     <modules>
         <module>test-hook-distribution</module>
     </modules>
@@ -46,7 +46,7 @@
                     <noDeploy>true</noDeploy>
                     <keepBranch>true</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
-	 	    <featureRebase>false</featureRebase>
+	 	    <featureRebase>true</featureRebase>
                 </configuration>
             </plugin>
         </plugins>
