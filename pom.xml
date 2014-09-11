@@ -3,7 +3,7 @@
   <groupId>testhook</groupId>
   <artifactId>testhook</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.6</version>
+  <version>1.0.7</version>
     <modules>
         <module>test-hook-distribution</module>
     </modules>
@@ -30,7 +30,7 @@
                         <featureBranchPrefix>feature-</featureBranchPrefix>
                         <releaseBranchPrefix>release-</releaseBranchPrefix>
                         <hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
-                        <versionTagPrefix>tag-</versionTagPrefix>
+                        <versionTagPrefix>v</versionTagPrefix>
                     </flowInitContext>
                     <enableFeatureVersions>true</enableFeatureVersions>
                     <pushFeatures>true</pushFeatures>
