@@ -44,7 +44,7 @@
  		    <defaultOriginUrl>https://github.com/vkarhaltsev/test.git</defaultOriginUrl>
 	 	    <alwaysUpdateOrigin>true</alwaysUpdateOrigin>
                     <noDeploy>true</noDeploy>
-                    <keepBranch>true</keepBranch>
+                    <keepBranch>false</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
 	 	    <featureRebase>false</featureRebase>
                 </configuration>
