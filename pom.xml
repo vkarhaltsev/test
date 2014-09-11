@@ -22,7 +22,7 @@
             <plugin>
                 <groupId>external.atlassian.jgitflow</groupId>
                 <artifactId>jgitflow-maven-plugin</artifactId>
-                <version>1.0-m4</version>
+                <version>1.0-m4.3</version>
                 <configuration>
                     <flowInitContext>
                         <masterBranchName>master</masterBranchName>
@@ -41,9 +41,12 @@
                     <noHotfixBuild>true</noHotfixBuild>
                     <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
+ 		    <defaultOriginUrl>https://github.com/vkarhaltsev/test.git</defaultOriginUrl>
+	 	    <alwaysUpdateOrigin>true</alwaysUpdateOrigin>
                     <noDeploy>true</noDeploy>
-                    <keepBranch>true</keepBranch>
+                    <keepBranch>false</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
+	 	    <featureRebase>false</featureRebase>
                 </configuration>
             </plugin>
         </plugins>
