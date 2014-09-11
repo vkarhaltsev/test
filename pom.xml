@@ -3,7 +3,7 @@
   <groupId>testhook</groupId>
   <artifactId>testhook</artifactId>
   <packaging>pom</packaging>
-  <version>1.0.8-SNAPSHOT</version>
+  <version>1.0.8-new_1-SNAPSHOT</version>
     <modules>
         <module>test-hook-distribution</module>
     </modules>
@@ -36,9 +36,6 @@
                     <pushFeatures>true</pushFeatures>
                     <pushReleases>true</pushReleases>
                     <pushHotfixes>true</pushHotfixes>
-                    <noFeatureBuild>true</noFeatureBuild>
-                    <noReleaseBuild>true</noReleaseBuild>
-                    <noHotfixBuild>true</noHotfixBuild>
                     <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
  		    <defaultOriginUrl>https://github.com/vkarhaltsev/test.git</defaultOriginUrl>
