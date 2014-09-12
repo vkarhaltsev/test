@@ -41,7 +41,7 @@
                     <noHotfixBuild>true</noHotfixBuild>
                     <releaseBranchVersionSuffix>RC</releaseBranchVersionSuffix>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
- 		    <defaultOriginUrl>git@github.com:vkarhaltsev/test</defaultOriginUrl>
+ 		    <defaultOriginUrl>git@github.com:vkarhaltsev/test.git</defaultOriginUrl>
 	 	    <alwaysUpdateOrigin>true</alwaysUpdateOrigin>
                     <noDeploy>true</noDeploy>
                     <keepBranch>false</keepBranch>
