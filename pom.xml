@@ -47,6 +47,7 @@
                     <keepBranch>false</keepBranch>
 		    <useReleaseProfile>false</useReleaseProfile>
 	 	    <featureRebase>false</featureRebase>
+		    <squash>true</squash>
                 </configuration>
             </plugin>
         </plugins>
