@@ -1,1 +1,1 @@
-neq
+conflict-from-branch
