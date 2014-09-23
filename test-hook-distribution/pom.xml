@@ -3,12 +3,12 @@
     <parent>
         <artifactId>testhook</artifactId>
         <groupId>testhook</groupId>
-        <version>1.0.9-SNAPSHOT</version>
+        <version>1.0.9-check__test-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>testhook-distribution</artifactId>
-    <version>${test}</version>
+    <version>1.0.3</version>
     <dependencies>
         <dependency>
             <groupId>org.apache.hadoop</groupId>
