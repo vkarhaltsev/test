@@ -8,6 +8,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>testhook-distribution</artifactId>
+    <version>${test}</version>
     <dependencies>
         <dependency>
             <groupId>org.apache.hadoop</groupId>

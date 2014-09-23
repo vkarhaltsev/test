@@ -9,6 +9,9 @@
     </modules>
     <name>testhook</name>
   <url>http://maven.apache.org</url>
+ <properties>
+ 	<test>1.0.3</test>
+ </properties>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
