@@ -52,7 +52,6 @@ jobs:
 
   deploy-production:
     needs: build
-    environment: prod
     runs-on: ubuntu-latest
     steps:
       - name: Login to Docker Hub
