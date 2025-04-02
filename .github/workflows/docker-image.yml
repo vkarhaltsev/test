@@ -68,4 +68,4 @@ jobs:
         run: docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.GITHUB_SHA_SHORT }} ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:prod
 
       - name: Push production image
-        run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:prod
+        run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
