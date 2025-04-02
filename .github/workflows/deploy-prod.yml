@@ -3,8 +3,8 @@ name: Docker Deploy Production
 on:
   workflow_dispatch:
     inputs:
-      build_run_id:
-        description: 'Run ID of the Build workflow to fetch the SHA'
+      sha:
+        description: 'Short SHA to deploy'
         required: true
 
 env:
@@ -23,16 +23,11 @@ jobs:
           username: ${{ secrets.REGISTRY_USER }}
           password: ${{ secrets.REGISTRY_TOKEN }}
 
-
-      - name: GitHub Slug Action
-        id: slug
-        uses: rlespinasse/github-slug-action@v4
-
       - name: Pull image by SHA
-        run: docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.GITHUB_SHA_SHORT }}
+        run: docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.event.inputs.sha }}
 
       - name: Retag image as uction
-        run: docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.GITHUB_SHA_SHORT }} ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:prod
+        run: docker tag ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.event.inputs.sha }} ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:prod
 
       - name: Push production image
         run: docker push ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:prod
