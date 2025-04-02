@@ -56,6 +56,11 @@ jobs:
           username: ${{ secrets.REGISTRY_USER }}
           password: ${{ secrets.REGISTRY_TOKEN }}
 
+
+      - name: GitHub Slug Action
+        id: slug
+        uses: rlespinasse/github-slug-action@v4
+
       - name: Pull image by SHA
         run: docker pull ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.GITHUB_SHA_SHORT }}
 
